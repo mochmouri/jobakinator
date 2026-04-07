@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "text": "It's a free Saturday. What are you most likely doing?",
+    "answers": [
+      { "text": "Building or fixing something around the house", "deltas": { "technical": 2, "physical": 2 } },
+      { "text": "Reading, writing, or learning something new", "deltas": { "analytical": 2, "creative": 1 } },
+      { "text": "Catching up with friends or family", "deltas": { "social": 3 } },
+      { "text": "Working on a personal project or side hustle", "deltas": { "entrepreneurial": 3, "creative": 1 } }
+    ]
+  },
+  {
+    "id": 2,
+    "text": "How do you feel about working with other people day-to-day?",
+    "answers": [
+      { "text": "I love it — I'm energised by people", "deltas": { "social": 3 } },
+      { "text": "I enjoy it in doses but need quiet time too", "deltas": { "social": 1, "analytical": 1 } },
+      { "text": "I prefer working independently most of the time", "deltas": { "technical": 1, "analytical": 2 } },
+      { "text": "I like leading a team and making decisions", "deltas": { "social": 2, "entrepreneurial": 2 } }
+    ]
+  },
+  {
+    "id": 3,
+    "text": "A problem lands on your desk. What's your instinct?",
+    "answers": [
+      { "text": "Break it down logically, step by step", "deltas": { "analytical": 3 } },
+      { "text": "Brainstorm creative or unconventional approaches", "deltas": { "creative": 3 } },
+      { "text": "Talk it through with others to find a solution", "deltas": { "social": 2, "entrepreneurial": 1 } },
+      { "text": "Roll up your sleeves and tackle it hands-on", "deltas": { "physical": 2, "technical": 1 } }
+    ]
+  },
+  {
+    "id": 4,
+    "text": "What matters most to you in a job?",
+    "answers": [
+      { "text": "Making a real difference to people's lives", "deltas": { "social": 3 } },
+      { "text": "Intellectual challenge and continuous learning", "deltas": { "analytical": 3 } },
+      { "text": "Creative freedom and self-expression", "deltas": { "creative": 3 } },
+      { "text": "Building something of your own", "deltas": { "entrepreneurial": 3 } }
+    ]
+  },
+  {
+    "id": 5,
+    "text": "How comfortable are you with physical or outdoor work?",
+    "answers": [
+      { "text": "Love it — I feel best when I'm moving", "deltas": { "physical": 3 } },
+      { "text": "It's fine occasionally but I prefer indoors", "deltas": { "physical": 1 } },
+      { "text": "I'd rather be at a desk or screen", "deltas": { "technical": 1, "analytical": 1 } },
+      { "text": "I don't mind either — flexibility is key", "deltas": { "social": 1, "entrepreneurial": 1 } }
+    ]
+  },
+  {
+    "id": 6,
+    "text": "Which school subject did you enjoy most?",
+    "answers": [
+      { "text": "Maths or Science", "deltas": { "analytical": 2, "technical": 2 } },
+      { "text": "Art, Drama, or Music", "deltas": { "creative": 3 } },
+      { "text": "English or History", "deltas": { "analytical": 1, "social": 1, "creative": 1 } },
+      { "text": "PE or Vocational subjects", "deltas": { "physical": 2, "technical": 1 } }
+    ]
+  },
+  {
+    "id": 7,
+    "text": "You're given a blank canvas and told to create something. How do you feel?",
+    "answers": [
+      { "text": "Excited — I thrive without constraints", "deltas": { "creative": 3, "entrepreneurial": 1 } },
+      { "text": "A bit anxious — I prefer clear guidelines", "deltas": { "analytical": 2, "technical": 1 } },
+      { "text": "Happy, as long as I can collaborate with others", "deltas": { "social": 2, "creative": 1 } },
+      { "text": "Focused — I'd research first and plan carefully", "deltas": { "analytical": 2, "technical": 1 } }
+    ]
+  },
+  {
+    "id": 8,
+    "text": "How do you feel about risk and uncertainty?",
+    "answers": [
+      { "text": "I actively seek it out — it's where opportunity lives", "deltas": { "entrepreneurial": 3 } },
+      { "text": "I'm comfortable if the risk is calculated", "deltas": { "analytical": 2, "entrepreneurial": 1 } },
+      { "text": "I prefer stability and predictability", "deltas": { "technical": 1, "social": 1 } },
+      { "text": "I take risks in my personal life but not work", "deltas": { "creative": 1, "social": 1 } }
+    ]
+  },
+  {
+    "id": 9,
+    "text": "What kind of results do you find most satisfying?",
+    "answers": [
+      { "text": "Seeing someone improve or succeed because of you", "deltas": { "social": 3 } },
+      { "text": "A polished, beautiful piece of work", "deltas": { "creative": 3 } },
+      { "text": "A technically elegant or correct solution", "deltas": { "technical": 2, "analytical": 1 } },
+      { "text": "Something you built growing and having impact", "deltas": { "entrepreneurial": 3 } }
+    ]
+  },
+  {
+    "id": 10,
+    "text": "How important is earning a high salary to you?",
+    "answers": [
+      { "text": "Very — it's a primary motivator", "deltas": { "analytical": 1, "entrepreneurial": 2 } },
+      { "text": "Important, but not at the expense of meaning", "deltas": { "social": 2, "analytical": 1 } },
+      { "text": "I'd sacrifice pay for creative freedom", "deltas": { "creative": 2 } },
+      { "text": "I'd rather have job security and stability", "deltas": { "technical": 2 } }
+    ]
+  },
+  {
+    "id": 11,
+    "text": "How do you prefer to communicate at work?",
+    "answers": [
+      { "text": "Face-to-face conversations and presentations", "deltas": { "social": 3 } },
+      { "text": "Written reports, documents, or code", "deltas": { "analytical": 2, "technical": 1 } },
+      { "text": "Visual formats — diagrams, designs, images", "deltas": { "creative": 2, "technical": 1 } },
+      { "text": "Whatever the situation calls for — I adapt", "deltas": { "social": 1, "entrepreneurial": 2 } }
+    ]
+  },
+  {
+    "id": 12,
+    "text": "Where do you see yourself working?",
+    "answers": [
+      { "text": "A busy clinic, school, or public setting", "deltas": { "social": 2, "physical": 1 } },
+      { "text": "A studio, lab, or technical workspace", "deltas": { "creative": 1, "technical": 2 } },
+      { "text": "My own office or remote setup", "deltas": { "analytical": 1, "entrepreneurial": 2 } },
+      { "text": "Outdoors or across different sites", "deltas": { "physical": 3 } }
+    ]
+  }
+]

@@ -1,0 +1,162 @@
+[
+  {
+    "id": "software_engineer",
+    "title": "Software Engineer",
+    "emoji": "💻",
+    "traits": { "creative": 6, "analytical": 9, "social": 4, "technical": 10, "physical": 1, "entrepreneurial": 5 },
+    "description": "Design, build and maintain software systems — from mobile apps to cloud infrastructure.",
+    "whySuitsYou": "You have a strong analytical mind, enjoy solving complex problems logically, and are comfortable spending long hours in a technical environment."
+  },
+  {
+    "id": "graphic_designer",
+    "title": "Graphic Designer",
+    "emoji": "🎨",
+    "traits": { "creative": 10, "analytical": 4, "social": 6, "technical": 5, "physical": 2, "entrepreneurial": 6 },
+    "description": "Create visual concepts — logos, layouts, branding — that communicate ideas to audiences.",
+    "whySuitsYou": "Your strong creative instincts, eye for aesthetics, and ability to translate ideas into visuals make design a natural fit."
+  },
+  {
+    "id": "doctor",
+    "title": "Doctor",
+    "emoji": "🩺",
+    "traits": { "creative": 4, "analytical": 9, "social": 8, "technical": 7, "physical": 5, "entrepreneurial": 3 },
+    "description": "Diagnose and treat illness, working closely with patients across a wide range of conditions.",
+    "whySuitsYou": "You combine empathy with sharp analytical thinking, can handle pressure well, and are motivated by helping people directly."
+  },
+  {
+    "id": "teacher",
+    "title": "Teacher",
+    "emoji": "📚",
+    "traits": { "creative": 7, "analytical": 5, "social": 10, "technical": 3, "physical": 3, "entrepreneurial": 3 },
+    "description": "Educate and inspire students, planning lessons and nurturing learning in classroom settings.",
+    "whySuitsYou": "You are patient, articulate, and genuinely energised by helping others understand things — explaining comes naturally to you."
+  },
+  {
+    "id": "entrepreneur",
+    "title": "Entrepreneur",
+    "emoji": "🚀",
+    "traits": { "creative": 8, "analytical": 7, "social": 8, "technical": 5, "physical": 3, "entrepreneurial": 10 },
+    "description": "Build and grow businesses from scratch, taking calculated risks to create something new.",
+    "whySuitsYou": "You thrive on independence, are comfortable with uncertainty, and have the drive and resourcefulness to turn ideas into reality."
+  },
+  {
+    "id": "data_scientist",
+    "title": "Data Scientist",
+    "emoji": "📊",
+    "traits": { "creative": 5, "analytical": 10, "social": 3, "technical": 9, "physical": 1, "entrepreneurial": 4 },
+    "description": "Extract insights from large datasets using statistics, machine learning, and visualisation.",
+    "whySuitsYou": "You love finding patterns in complexity, think quantitatively, and enjoy the process of turning raw data into meaningful stories."
+  },
+  {
+    "id": "architect",
+    "title": "Architect",
+    "emoji": "🏛️",
+    "traits": { "creative": 9, "analytical": 8, "social": 6, "technical": 8, "physical": 3, "entrepreneurial": 5 },
+    "description": "Design buildings and spaces, balancing aesthetics, function, safety, and sustainability.",
+    "whySuitsYou": "You think both creatively and analytically, care about how spaces feel and function, and enjoy long-term, detail-oriented projects."
+  },
+  {
+    "id": "nurse",
+    "title": "Nurse",
+    "emoji": "💉",
+    "traits": { "creative": 3, "analytical": 6, "social": 10, "technical": 6, "physical": 7, "entrepreneurial": 2 },
+    "description": "Provide hands-on patient care, administer treatments, and support recovery in clinical settings.",
+    "whySuitsYou": "You are compassionate and calm under pressure, enjoy being physically active in your work, and take satisfaction in making people feel cared for."
+  },
+  {
+    "id": "lawyer",
+    "title": "Lawyer",
+    "emoji": "⚖️",
+    "traits": { "creative": 5, "analytical": 9, "social": 8, "technical": 4, "physical": 1, "entrepreneurial": 6 },
+    "description": "Advise clients on legal matters, draft documents, and advocate in courts or negotiations.",
+    "whySuitsYou": "You argue persuasively, think precisely, and enjoy mastering complex rule systems — and you perform well under pressure."
+  },
+  {
+    "id": "chef",
+    "title": "Chef",
+    "emoji": "👨‍🍳",
+    "traits": { "creative": 9, "analytical": 4, "social": 6, "technical": 5, "physical": 8, "entrepreneurial": 7 },
+    "description": "Create and prepare dishes at a professional level, often leading a kitchen team.",
+    "whySuitsYou": "You are creative with your hands, love immediate tangible results, and thrive in a fast-paced, high-energy environment."
+  },
+  {
+    "id": "marketing_manager",
+    "title": "Marketing Manager",
+    "emoji": "📣",
+    "traits": { "creative": 8, "analytical": 7, "social": 9, "technical": 4, "physical": 1, "entrepreneurial": 8 },
+    "description": "Plan and execute campaigns to grow brand awareness and drive customer acquisition.",
+    "whySuitsYou": "You blend creative storytelling with data-driven thinking, and enjoy influencing how people perceive products and ideas."
+  },
+  {
+    "id": "civil_engineer",
+    "title": "Civil Engineer",
+    "emoji": "🌉",
+    "traits": { "creative": 5, "analytical": 9, "social": 5, "technical": 10, "physical": 6, "entrepreneurial": 4 },
+    "description": "Design and oversee construction of infrastructure — roads, bridges, water systems.",
+    "whySuitsYou": "You like applying maths and science to real-world problems, enjoy seeing physical results, and are methodical in your approach."
+  },
+  {
+    "id": "psychologist",
+    "title": "Psychologist",
+    "emoji": "🧠",
+    "traits": { "creative": 5, "analytical": 8, "social": 9, "technical": 3, "physical": 1, "entrepreneurial": 4 },
+    "description": "Study human behaviour and help clients work through mental and emotional challenges.",
+    "whySuitsYou": "You are a deep listener, genuinely curious about what drives people, and comfortable sitting with ambiguity and complexity."
+  },
+  {
+    "id": "journalist",
+    "title": "Journalist",
+    "emoji": "📰",
+    "traits": { "creative": 8, "analytical": 6, "social": 9, "technical": 3, "physical": 4, "entrepreneurial": 6 },
+    "description": "Research and write stories that inform the public, working across print, broadcast, or digital media.",
+    "whySuitsYou": "You are naturally curious, communicate well, and enjoy digging into topics — especially when the stakes feel real."
+  },
+  {
+    "id": "financial_analyst",
+    "title": "Financial Analyst",
+    "emoji": "💹",
+    "traits": { "creative": 3, "analytical": 10, "social": 5, "technical": 7, "physical": 1, "entrepreneurial": 6 },
+    "description": "Analyse financial data to guide investment decisions and business strategy.",
+    "whySuitsYou": "You are comfortable with numbers, think rigorously, and enjoy translating complex data into clear recommendations."
+  },
+  {
+    "id": "physiotherapist",
+    "title": "Physiotherapist",
+    "emoji": "🏃",
+    "traits": { "creative": 4, "analytical": 7, "social": 8, "technical": 5, "physical": 9, "entrepreneurial": 3 },
+    "description": "Help patients recover from injury or manage physical conditions through targeted exercise and therapy.",
+    "whySuitsYou": "You enjoy hands-on work, understand the body well, and get satisfaction from seeing measurable progress in the people you help."
+  },
+  {
+    "id": "ux_designer",
+    "title": "UX Designer",
+    "emoji": "🖱️",
+    "traits": { "creative": 9, "analytical": 7, "social": 7, "technical": 6, "physical": 1, "entrepreneurial": 5 },
+    "description": "Design digital products that are intuitive, accessible, and enjoyable to use.",
+    "whySuitsYou": "You are empathetic to users, think systematically about flows and interactions, and care deeply about the quality of the final experience."
+  },
+  {
+    "id": "electrician",
+    "title": "Electrician",
+    "emoji": "⚡",
+    "traits": { "creative": 3, "analytical": 7, "social": 4, "technical": 9, "physical": 9, "entrepreneurial": 5 },
+    "description": "Install, maintain, and repair electrical systems in homes, businesses, and industrial settings.",
+    "whySuitsYou": "You prefer practical, hands-on work with clear technical standards, enjoy problem-solving in the physical world, and like seeing a job done."
+  },
+  {
+    "id": "film_director",
+    "title": "Film Director",
+    "emoji": "🎬",
+    "traits": { "creative": 10, "analytical": 5, "social": 8, "technical": 6, "physical": 4, "entrepreneurial": 8 },
+    "description": "Lead the creative vision of a film — from script to screen — collaborating with large teams.",
+    "whySuitsYou": "You have a strong visual imagination, natural leadership presence, and thrive when orchestrating many creative elements towards a single vision."
+  },
+  {
+    "id": "scientist",
+    "title": "Research Scientist",
+    "emoji": "🔬",
+    "traits": { "creative": 6, "analytical": 10, "social": 4, "technical": 8, "physical": 3, "entrepreneurial": 3 },
+    "description": "Conduct experiments and investigate phenomena to advance knowledge in a specialist field.",
+    "whySuitsYou": "You are patient, rigorous, and intrinsically motivated by understanding how things work — you enjoy the process, not just the result."
+  }
+]
