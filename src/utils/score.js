@@ -1,8 +1,53 @@
-const TRAITS = ['creative', 'analytical', 'social', 'technical', 'physical', 'entrepreneurial'];
+export const TRAITS = [
+  'analytical', 'creative', 'social', 'technical', 'physical',
+  'entrepreneurial', 'structured', 'humanitarian', 'outdoors', 'leadership',
+];
 
-export function buildProfile(answers) {
+export const TRAIT_LABELS = {
+  analytical: 'Analytical',
+  creative: 'Creative',
+  social: 'Social',
+  technical: 'Technical',
+  physical: 'Physical',
+  entrepreneurial: 'Entrepreneurial',
+  structured: 'Structured',
+  humanitarian: 'Humanitarian',
+  outdoors: 'Outdoors',
+  leadership: 'Leadership',
+};
+
+export const TRAIT_DESCRIPTIONS = {
+  analytical: 'You like logic, data, and figuring things out systematically',
+  creative: 'You enjoy making things and thinking in new, original ways',
+  social: 'You are energised by people and draw meaning from human connection',
+  technical: 'You are comfortable with tools, systems, and technical complexity',
+  physical: 'You like using your body and working in physical environments',
+  entrepreneurial: 'You are drawn to building things, taking risks, and working independently',
+  structured: 'You value order, clear processes, and doing things methodically',
+  humanitarian: 'You are motivated by helping people and contributing to the common good',
+  outdoors: 'You prefer working in nature or varied locations over a fixed desk',
+  leadership: 'You enjoy taking charge, making decisions, and guiding others',
+};
+
+export function buildProfile(answers, questions) {
   const profile = Object.fromEntries(TRAITS.map(t => [t, 0]));
-  for (const answer of answers) {
+
+  // If called with flat delta objects (legacy), use directly
+  if (!questions) {
+    for (const answer of answers) {
+      for (const [trait, delta] of Object.entries(answer.deltas)) {
+        profile[trait] = (profile[trait] || 0) + delta;
+      }
+    }
+    return profile;
+  }
+
+  // answers is array of { questionId, answerIndex }
+  for (const { questionId, answerIndex } of answers) {
+    const q = questions.find(q => q.id === questionId);
+    if (!q) continue;
+    const answer = q.answers[answerIndex];
+    if (!answer) continue;
     for (const [trait, delta] of Object.entries(answer.deltas)) {
       profile[trait] = (profile[trait] || 0) + delta;
     }

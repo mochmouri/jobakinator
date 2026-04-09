@@ -6,19 +6,22 @@ export default function Question({ question, questionNumber, total, onAnswer }) 
   function handleSelect(answer, idx) {
     if (selected !== null) return;
     setSelected(idx);
-    setTimeout(() => onAnswer(answer), 350);
+    setTimeout(() => onAnswer(answer), 300);
   }
 
   return (
-    <div className="animate-fade-slide-in w-full max-w-2xl mx-auto">
-      <p className="text-xs font-semibold tracking-widest text-purple-400 uppercase mb-3">
-        Question {questionNumber} / {total}
+    <div className="animate-fade-in w-full max-w-[540px] mx-auto px-4">
+      <p className="text-sm mb-5" style={{ color: '#6B6B6B' }}>
+        Question {questionNumber} of {total}
       </p>
-      <h2 className="text-2xl sm:text-3xl font-bold text-white mb-8 leading-tight">
+      <h2
+        className="text-[22px] font-medium leading-snug mb-6"
+        style={{ color: '#1A1A1A' }}
+      >
         {question.text}
       </h2>
 
-      <div className="flex flex-col gap-3">
+      <div className="flex flex-col gap-2">
         {question.answers.map((answer, idx) => {
           const isSelected = selected === idx;
           const isDimmed = selected !== null && !isSelected;
@@ -27,29 +30,30 @@ export default function Question({ question, questionNumber, total, onAnswer }) 
             <button
               key={idx}
               onClick={() => handleSelect(answer, idx)}
-              className={[
-                'w-full text-left px-5 py-4 rounded-2xl border text-sm sm:text-base font-medium',
-                'transition-all duration-200 cursor-pointer',
-                isSelected
-                  ? 'bg-purple-600 border-purple-400 text-white scale-[1.02] shadow-lg shadow-purple-900/40'
+              disabled={selected !== null}
+              className="w-full text-left text-sm transition-colors duration-100 cursor-pointer disabled:cursor-default"
+              style={{
+                padding: '14px 16px',
+                minHeight: '48px',
+                border: isSelected ? '1px solid #5B5BD6' : '1px solid #E5E5E5',
+                borderRadius: '6px',
+                background: isSelected
+                  ? '#F4F4FF'
                   : isDimmed
-                  ? 'bg-slate-800/30 border-slate-700/30 text-slate-500'
-                  : 'bg-slate-800/60 border-slate-700 text-slate-200 hover:bg-slate-700/70 hover:border-purple-500/50 hover:text-white hover:scale-[1.01]',
-              ].join(' ')}
+                  ? '#FAFAFA'
+                  : '#FFFFFF',
+                color: isDimmed ? '#AAAAAA' : '#1A1A1A',
+              }}
+              onMouseEnter={e => {
+                if (selected !== null) return;
+                e.currentTarget.style.background = '#F5F5F5';
+              }}
+              onMouseLeave={e => {
+                if (selected !== null) return;
+                e.currentTarget.style.background = '#FFFFFF';
+              }}
             >
-              <span className="inline-flex items-center gap-3">
-                <span
-                  className={[
-                    'w-6 h-6 rounded-full border text-xs flex items-center justify-center flex-shrink-0 font-bold',
-                    isSelected
-                      ? 'bg-white text-purple-600 border-white'
-                      : 'border-slate-600 text-slate-400',
-                  ].join(' ')}
-                >
-                  {String.fromCharCode(65 + idx)}
-                </span>
-                {answer.text}
-              </span>
+              {answer.text}
             </button>
           );
         })}

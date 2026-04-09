@@ -1,53 +1,33 @@
 @import "tailwindcss";
 
-@keyframes fadeSlideIn {
-  from { opacity: 0; transform: translateY(20px); }
+/* ── Animations ── */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
   to   { opacity: 1; transform: translateY(0); }
-}
-
-@keyframes revealCard {
-  from { opacity: 0; transform: translateY(32px) scale(0.96); }
-  to   { opacity: 1; transform: translateY(0) scale(1); }
-}
-
-@keyframes popIn {
-  0%   { transform: scale(0.8); opacity: 0; }
-  70%  { transform: scale(1.05); }
-  100% { transform: scale(1); opacity: 1; }
 }
 
 @keyframes barGrow {
   from { width: 0%; }
 }
 
-@keyframes progressPulse {
-  0%, 100% { opacity: 1; }
-  50%       { opacity: 0.7; }
-}
-
-.animate-fade-slide-in {
-  animation: fadeSlideIn 0.4s ease both;
-}
-
-.animate-reveal-card {
-  animation: revealCard 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) both;
-}
-
-.animate-pop-in {
-  animation: popIn 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) both;
+.animate-fade-in {
+  animation: fadeIn 0.25s ease both;
 }
 
 .animate-bar-grow {
-  animation: barGrow 1.2s ease-out both;
+  animation: barGrow 0.7s ease-out both;
 }
 
-* { box-sizing: border-box; margin: 0; padding: 0; }
+/* ── Reset ── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
+/* ── Base ── */
 body {
-  font-family: system-ui, 'Segoe UI', Roboto, sans-serif;
-  background: #0f0f1a;
-  color: #e2e8f0;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  background: #FAFAFA;
+  color: #1A1A1A;
   min-height: 100svh;
+  -webkit-font-smoothing: antialiased;
 }
 
 #root {

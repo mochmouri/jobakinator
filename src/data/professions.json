@@ -1,0 +1,602 @@
+[
+  {
+    "id": "software_engineer",
+    "title": "Software Engineer",
+    "category": "Technology",
+    "traits": { "analytical": 9, "creative": 6, "social": 4, "technical": 10, "physical": 1, "entrepreneurial": 5, "structured": 8, "humanitarian": 2, "outdoors": 1, "leadership": 4 },
+    "description": "Design, build and maintain software systems — from mobile apps to cloud infrastructure. You'll spend most of your time reading code, solving logic problems, and collaborating with engineers.",
+    "why": "Your analytical drive and comfort with technical depth make engineering a natural fit."
+  },
+  {
+    "id": "graphic_designer",
+    "title": "Graphic Designer",
+    "category": "Creative & Media",
+    "traits": { "analytical": 4, "creative": 10, "social": 6, "technical": 5, "physical": 2, "entrepreneurial": 6, "structured": 5, "humanitarian": 3, "outdoors": 2, "leadership": 4 },
+    "description": "Create visual concepts — logos, layouts, branding — that communicate ideas to audiences. Work spans print, digital, and brand identity projects.",
+    "why": "Your strong creative instincts and visual thinking make design a natural expression."
+  },
+  {
+    "id": "doctor",
+    "title": "Doctor",
+    "category": "Health & Science",
+    "traits": { "analytical": 9, "creative": 4, "social": 8, "technical": 7, "physical": 5, "entrepreneurial": 3, "structured": 7, "humanitarian": 9, "outdoors": 2, "leadership": 6 },
+    "description": "Diagnose and treat illness, working closely with patients across a wide range of conditions. Requires long training, but offers high impact and deep satisfaction.",
+    "why": "You combine empathy with analytical rigour and are motivated by directly improving people's lives."
+  },
+  {
+    "id": "teacher",
+    "title": "Teacher",
+    "category": "Social & Education",
+    "traits": { "analytical": 5, "creative": 7, "social": 10, "technical": 3, "physical": 3, "entrepreneurial": 3, "structured": 6, "humanitarian": 9, "outdoors": 3, "leadership": 7 },
+    "description": "Educate and inspire students, planning lessons and nurturing learning in classroom settings. One of the most socially impactful roles there is.",
+    "why": "You are patient, articulate, and energised by helping others understand — explaining comes naturally."
+  },
+  {
+    "id": "entrepreneur",
+    "title": "Entrepreneur",
+    "category": "Business & Law",
+    "traits": { "analytical": 7, "creative": 8, "social": 8, "technical": 5, "physical": 3, "entrepreneurial": 10, "structured": 3, "humanitarian": 4, "outdoors": 3, "leadership": 9 },
+    "description": "Build and grow businesses from scratch, taking calculated risks to create something new. Every day brings different challenges across strategy, people, and execution.",
+    "why": "You thrive on independence, tolerate uncertainty well, and have the drive to turn ideas into reality."
+  },
+  {
+    "id": "data_scientist",
+    "title": "Data Scientist",
+    "category": "Technology",
+    "traits": { "analytical": 10, "creative": 5, "social": 3, "technical": 9, "physical": 1, "entrepreneurial": 4, "structured": 8, "humanitarian": 2, "outdoors": 1, "leadership": 3 },
+    "description": "Extract insights from large datasets using statistics, machine learning, and visualisation. Work spans business intelligence, research, and product analytics.",
+    "why": "You love finding patterns in complexity and enjoy turning raw data into decisions."
+  },
+  {
+    "id": "architect",
+    "title": "Architect",
+    "category": "Creative & Media",
+    "traits": { "analytical": 8, "creative": 9, "social": 6, "technical": 8, "physical": 3, "entrepreneurial": 5, "structured": 7, "humanitarian": 4, "outdoors": 4, "leadership": 6 },
+    "description": "Design buildings and spaces, balancing aesthetics, function, safety, and sustainability. Projects range from private homes to civic landmarks.",
+    "why": "You think both creatively and analytically, care about how spaces feel, and enjoy long-term detailed work."
+  },
+  {
+    "id": "nurse",
+    "title": "Nurse",
+    "category": "Health & Science",
+    "traits": { "analytical": 6, "creative": 3, "social": 10, "technical": 6, "physical": 7, "entrepreneurial": 2, "structured": 6, "humanitarian": 10, "outdoors": 3, "leadership": 5 },
+    "description": "Provide hands-on patient care, administer treatments, and support recovery in clinical settings. A demanding and deeply human-centred role.",
+    "why": "You are compassionate, calm under pressure, and find meaning in making people feel cared for."
+  },
+  {
+    "id": "lawyer",
+    "title": "Lawyer",
+    "category": "Business & Law",
+    "traits": { "analytical": 9, "creative": 5, "social": 8, "technical": 4, "physical": 1, "entrepreneurial": 6, "structured": 8, "humanitarian": 6, "outdoors": 1, "leadership": 7 },
+    "description": "Advise clients on legal matters, draft documents, and advocate in courts or negotiations. Specialisms range from corporate law to criminal defence.",
+    "why": "You argue persuasively, think precisely, and perform well under pressure — especially when the stakes feel real."
+  },
+  {
+    "id": "chef",
+    "title": "Chef",
+    "category": "Skilled Trades & Outdoors",
+    "traits": { "analytical": 4, "creative": 9, "social": 6, "technical": 5, "physical": 8, "entrepreneurial": 7, "structured": 5, "humanitarian": 4, "outdoors": 2, "leadership": 6 },
+    "description": "Create and prepare dishes at a professional level, often leading a kitchen team. Fast-paced, physically demanding, and deeply creative.",
+    "why": "You are creative with your hands, love immediate tangible results, and thrive in a high-energy environment."
+  },
+  {
+    "id": "marketing_manager",
+    "title": "Marketing Manager",
+    "category": "Business & Law",
+    "traits": { "analytical": 7, "creative": 8, "social": 9, "technical": 4, "physical": 1, "entrepreneurial": 8, "structured": 5, "humanitarian": 3, "outdoors": 2, "leadership": 7 },
+    "description": "Plan and execute campaigns to grow brand awareness and drive customer acquisition. Balances creativity, data, and stakeholder management.",
+    "why": "You blend creative storytelling with data-driven thinking and enjoy shaping how people perceive things."
+  },
+  {
+    "id": "civil_engineer",
+    "title": "Civil Engineer",
+    "category": "Skilled Trades & Outdoors",
+    "traits": { "analytical": 9, "creative": 5, "social": 5, "technical": 10, "physical": 6, "entrepreneurial": 4, "structured": 9, "humanitarian": 4, "outdoors": 5, "leadership": 5 },
+    "description": "Design and oversee construction of infrastructure — roads, bridges, water systems. Work spans site visits and detailed technical calculations.",
+    "why": "You like applying maths and science to real-world problems and enjoy seeing physical results."
+  },
+  {
+    "id": "psychologist",
+    "title": "Psychologist",
+    "category": "Social & Education",
+    "traits": { "analytical": 8, "creative": 5, "social": 9, "technical": 3, "physical": 1, "entrepreneurial": 4, "structured": 5, "humanitarian": 9, "outdoors": 2, "leadership": 4 },
+    "description": "Study human behaviour and help clients work through mental and emotional challenges. Roles range from clinical practice to organisational consultancy.",
+    "why": "You are a deep listener, curious about what drives people, and comfortable sitting with complexity."
+  },
+  {
+    "id": "journalist",
+    "title": "Journalist",
+    "category": "Creative & Media",
+    "traits": { "analytical": 6, "creative": 8, "social": 9, "technical": 3, "physical": 4, "entrepreneurial": 6, "structured": 4, "humanitarian": 7, "outdoors": 4, "leadership": 5 },
+    "description": "Research and write stories that inform the public, across print, broadcast, or digital media. The best journalists are curious, tenacious, and clear communicators.",
+    "why": "You are naturally curious, communicate well, and enjoy digging into topics — especially high-stakes ones."
+  },
+  {
+    "id": "financial_analyst",
+    "title": "Financial Analyst",
+    "category": "Business & Law",
+    "traits": { "analytical": 10, "creative": 3, "social": 5, "technical": 7, "physical": 1, "entrepreneurial": 6, "structured": 9, "humanitarian": 2, "outdoors": 1, "leadership": 4 },
+    "description": "Analyse financial data to guide investment decisions and business strategy. Requires strong quantitative ability and attention to detail.",
+    "why": "You are comfortable with numbers, think rigorously, and enjoy translating complex data into clear recommendations."
+  },
+  {
+    "id": "physiotherapist",
+    "title": "Physiotherapist",
+    "category": "Health & Science",
+    "traits": { "analytical": 7, "creative": 4, "social": 8, "technical": 5, "physical": 9, "entrepreneurial": 3, "structured": 6, "humanitarian": 8, "outdoors": 4, "leadership": 4 },
+    "description": "Help patients recover from injury or manage physical conditions through targeted exercise and therapy. Combines clinical knowledge with hands-on care.",
+    "why": "You enjoy hands-on work, understand the body well, and get satisfaction from measurable progress in others."
+  },
+  {
+    "id": "ux_designer",
+    "title": "UX Designer",
+    "category": "Technology",
+    "traits": { "analytical": 7, "creative": 9, "social": 7, "technical": 6, "physical": 1, "entrepreneurial": 5, "structured": 6, "humanitarian": 5, "outdoors": 1, "leadership": 4 },
+    "description": "Design digital products that are intuitive, accessible, and enjoyable to use. Work spans research, wireframing, prototyping, and user testing.",
+    "why": "You are empathetic to users, think systematically about flows, and care about the quality of the final experience."
+  },
+  {
+    "id": "electrician",
+    "title": "Electrician",
+    "category": "Skilled Trades & Outdoors",
+    "traits": { "analytical": 7, "creative": 3, "social": 4, "technical": 9, "physical": 9, "entrepreneurial": 5, "structured": 7, "humanitarian": 3, "outdoors": 5, "leadership": 3 },
+    "description": "Install, maintain, and repair electrical systems in homes, businesses, and industrial settings. A skilled trade with consistent demand and good earning potential.",
+    "why": "You prefer practical hands-on work with clear technical standards and like seeing a job properly done."
+  },
+  {
+    "id": "film_director",
+    "title": "Film Director",
+    "category": "Creative & Media",
+    "traits": { "analytical": 5, "creative": 10, "social": 8, "technical": 6, "physical": 4, "entrepreneurial": 8, "structured": 4, "humanitarian": 4, "outdoors": 4, "leadership": 9 },
+    "description": "Lead the creative vision of a film — from script to screen — collaborating with large teams. Requires a strong aesthetic sense and the confidence to lead under pressure.",
+    "why": "You have strong visual imagination, natural leadership presence, and thrive orchestrating many elements toward one vision."
+  },
+  {
+    "id": "research_scientist",
+    "title": "Research Scientist",
+    "category": "Health & Science",
+    "traits": { "analytical": 10, "creative": 6, "social": 4, "technical": 8, "physical": 3, "entrepreneurial": 3, "structured": 8, "humanitarian": 5, "outdoors": 3, "leadership": 3 },
+    "description": "Conduct experiments and investigate phenomena to advance knowledge in a specialist field. Work is slow, rigorous, and deeply rewarding for the intellectually curious.",
+    "why": "You are patient, rigorous, and intrinsically motivated by understanding how things work."
+  },
+  {
+    "id": "devops_engineer",
+    "title": "DevOps Engineer",
+    "category": "Technology",
+    "traits": { "analytical": 9, "creative": 4, "social": 5, "technical": 10, "physical": 2, "entrepreneurial": 5, "structured": 8, "humanitarian": 2, "outdoors": 1, "leadership": 4 },
+    "description": "Automate and streamline the software delivery pipeline — from code commit to production deployment. Bridges development and operations teams.",
+    "why": "You enjoy systems thinking, automation challenges, and making things run reliably at scale."
+  },
+  {
+    "id": "cybersecurity_analyst",
+    "title": "Cybersecurity Analyst",
+    "category": "Technology",
+    "traits": { "analytical": 9, "creative": 6, "social": 4, "technical": 10, "physical": 2, "entrepreneurial": 5, "structured": 8, "humanitarian": 4, "outdoors": 1, "leadership": 4 },
+    "description": "Protect organisations from digital threats — identifying vulnerabilities, monitoring for attacks, and responding to incidents. Demands constant learning as threats evolve.",
+    "why": "You have a hacker's curiosity and an engineer's discipline — you want to find the flaw before someone else does."
+  },
+  {
+    "id": "ml_engineer",
+    "title": "Machine Learning Engineer",
+    "category": "Technology",
+    "traits": { "analytical": 10, "creative": 6, "social": 3, "technical": 10, "physical": 1, "entrepreneurial": 5, "structured": 7, "humanitarian": 3, "outdoors": 1, "leadership": 3 },
+    "description": "Build and deploy machine learning systems at scale — from model training pipelines to real-time inference. Sits at the intersection of research and engineering.",
+    "why": "You love applying mathematical ideas to real systems and enjoy the challenge of making models production-ready."
+  },
+  {
+    "id": "embedded_systems_engineer",
+    "title": "Embedded Systems Engineer",
+    "category": "Technology",
+    "traits": { "analytical": 9, "creative": 5, "social": 3, "technical": 10, "physical": 4, "entrepreneurial": 4, "structured": 9, "humanitarian": 2, "outdoors": 2, "leadership": 3 },
+    "description": "Write software for hardware — microcontrollers, sensors, real-time systems. Found in everything from medical devices to cars and industrial machines.",
+    "why": "You like working close to the metal, where software meets the physical world and constraints are hard."
+  },
+  {
+    "id": "technical_writer",
+    "title": "Technical Writer",
+    "category": "Technology",
+    "traits": { "analytical": 7, "creative": 8, "social": 5, "technical": 7, "physical": 1, "entrepreneurial": 4, "structured": 8, "humanitarian": 4, "outdoors": 1, "leadership": 3 },
+    "description": "Translate complex technical information into clear documentation, guides, and references. Works closely with engineers, designers, and product teams.",
+    "why": "You can hold technical complexity in mind while writing with clarity — a rare and undervalued combination."
+  },
+  {
+    "id": "it_consultant",
+    "title": "IT Consultant",
+    "category": "Technology",
+    "traits": { "analytical": 8, "creative": 5, "social": 7, "technical": 9, "physical": 2, "entrepreneurial": 7, "structured": 7, "humanitarian": 3, "outdoors": 2, "leadership": 7 },
+    "description": "Help organisations improve their technology systems — advising on software, infrastructure, and digital transformation. Combines technical depth with client management.",
+    "why": "You enjoy diagnosing organisational problems and have the communication skills to turn technical insight into business change."
+  },
+  {
+    "id": "cloud_architect",
+    "title": "Cloud Architect",
+    "category": "Technology",
+    "traits": { "analytical": 9, "creative": 5, "social": 5, "technical": 10, "physical": 1, "entrepreneurial": 5, "structured": 9, "humanitarian": 2, "outdoors": 1, "leadership": 5 },
+    "description": "Design and oversee an organisation's cloud infrastructure — balancing performance, cost, security, and resilience. One of the most senior technical roles in modern engineering.",
+    "why": "You think at the system level, can hold many constraints simultaneously, and enjoy making architectural trade-offs."
+  },
+  {
+    "id": "qa_engineer",
+    "title": "QA Engineer",
+    "category": "Technology",
+    "traits": { "analytical": 9, "creative": 4, "social": 5, "technical": 9, "physical": 1, "entrepreneurial": 3, "structured": 10, "humanitarian": 3, "outdoors": 1, "leadership": 3 },
+    "description": "Ensure software is reliable, correct, and meets user expectations through systematic testing. Writes automated tests and investigates edge cases others miss.",
+    "why": "You think in failure modes, take quality seriously, and find satisfaction in catching what others overlooked."
+  },
+  {
+    "id": "blockchain_developer",
+    "title": "Blockchain Developer",
+    "category": "Technology",
+    "traits": { "analytical": 9, "creative": 6, "social": 3, "technical": 10, "physical": 1, "entrepreneurial": 7, "structured": 7, "humanitarian": 3, "outdoors": 1, "leadership": 3 },
+    "description": "Build decentralised applications and smart contracts on blockchain platforms. A niche with high technical depth and a strong entrepreneurial culture.",
+    "why": "You enjoy frontier technology, aren't fazed by fast-moving ecosystems, and want to build on the cutting edge."
+  },
+  {
+    "id": "ai_researcher",
+    "title": "AI Researcher",
+    "category": "Technology",
+    "traits": { "analytical": 10, "creative": 7, "social": 3, "technical": 9, "physical": 1, "entrepreneurial": 5, "structured": 7, "humanitarian": 4, "outdoors": 1, "leadership": 3 },
+    "description": "Push the boundaries of machine intelligence — publishing papers, designing experiments, and developing new algorithms. Requires deep mathematical and programming ability.",
+    "why": "You are driven by fundamental questions, enjoy rigorous experimentation, and want to shape what AI becomes."
+  },
+  {
+    "id": "pharmacist",
+    "title": "Pharmacist",
+    "category": "Health & Science",
+    "traits": { "analytical": 9, "creative": 3, "social": 6, "technical": 7, "physical": 3, "entrepreneurial": 3, "structured": 9, "humanitarian": 8, "outdoors": 1, "leadership": 4 },
+    "description": "Dispense medications, advise patients on drug interactions, and support clinical teams. A trusted healthcare professional with detailed pharmacological knowledge.",
+    "why": "You combine meticulous attention to detail with genuine care for patient safety and wellbeing."
+  },
+  {
+    "id": "dentist",
+    "title": "Dentist",
+    "category": "Health & Science",
+    "traits": { "analytical": 8, "creative": 5, "social": 7, "technical": 8, "physical": 6, "entrepreneurial": 5, "structured": 8, "humanitarian": 7, "outdoors": 1, "leadership": 5 },
+    "description": "Diagnose and treat problems of the teeth, gums, and mouth. Many dentists run their own practice, combining clinical and business responsibilities.",
+    "why": "You have steady hands, care about patient wellbeing, and enjoy work that is technically precise and immediately visible."
+  },
+  {
+    "id": "epidemiologist",
+    "title": "Epidemiologist",
+    "category": "Health & Science",
+    "traits": { "analytical": 10, "creative": 5, "social": 5, "technical": 7, "physical": 3, "entrepreneurial": 3, "structured": 8, "humanitarian": 9, "outdoors": 3, "leadership": 4 },
+    "description": "Study how diseases spread and develop strategies to protect population health. Combines statistical analysis with fieldwork and public health policy.",
+    "why": "You want to protect people at scale, think in populations rather than individuals, and take data seriously."
+  },
+  {
+    "id": "neuroscientist",
+    "title": "Neuroscientist",
+    "category": "Health & Science",
+    "traits": { "analytical": 10, "creative": 6, "social": 3, "technical": 8, "physical": 2, "entrepreneurial": 3, "structured": 8, "humanitarian": 6, "outdoors": 1, "leadership": 3 },
+    "description": "Investigate how the brain and nervous system work — from single neurons to complex behaviour. Research spans molecular, computational, and cognitive approaches.",
+    "why": "You are fascinated by the mind, comfortable with long-horizon research, and want to understand what makes us human."
+  },
+  {
+    "id": "biomedical_engineer",
+    "title": "Biomedical Engineer",
+    "category": "Health & Science",
+    "traits": { "analytical": 9, "creative": 6, "social": 4, "technical": 10, "physical": 3, "entrepreneurial": 4, "structured": 8, "humanitarian": 7, "outdoors": 1, "leadership": 4 },
+    "description": "Design medical devices, imaging systems, and technologies that diagnose or treat disease. Bridges engineering and medicine for direct human impact.",
+    "why": "You want to apply engineering to healthcare problems — building the tools that save lives."
+  },
+  {
+    "id": "nutritionist",
+    "title": "Nutritionist",
+    "category": "Health & Science",
+    "traits": { "analytical": 6, "creative": 5, "social": 8, "technical": 4, "physical": 5, "entrepreneurial": 5, "structured": 7, "humanitarian": 9, "outdoors": 3, "leadership": 4 },
+    "description": "Advise individuals and communities on diet, health, and food choices. Works in clinical settings, sports, public health, or private practice.",
+    "why": "You care about people's wellbeing, enjoy translating science into practical advice, and find food genuinely interesting."
+  },
+  {
+    "id": "veterinarian",
+    "title": "Veterinarian",
+    "category": "Health & Science",
+    "traits": { "analytical": 8, "creative": 4, "social": 7, "technical": 7, "physical": 7, "entrepreneurial": 4, "structured": 7, "humanitarian": 9, "outdoors": 6, "leadership": 4 },
+    "description": "Diagnose and treat animals — from pets to livestock to wildlife. Combines clinical medicine with a love of animals and the ability to communicate with their owners.",
+    "why": "You care deeply about animals, can think clinically under pressure, and are comfortable with hands-on physical work."
+  },
+  {
+    "id": "environmental_scientist",
+    "title": "Environmental Scientist",
+    "category": "Health & Science",
+    "traits": { "analytical": 8, "creative": 5, "social": 5, "technical": 7, "physical": 7, "entrepreneurial": 3, "structured": 7, "humanitarian": 9, "outdoors": 9, "leadership": 4 },
+    "description": "Study the environment, assess human impact, and develop strategies for sustainability. Work spans fieldwork, data analysis, and policy consultation.",
+    "why": "You are motivated by protecting the natural world and can combine scientific rigour with environmental purpose."
+  },
+  {
+    "id": "forensic_scientist",
+    "title": "Forensic Scientist",
+    "category": "Health & Science",
+    "traits": { "analytical": 10, "creative": 4, "social": 4, "technical": 8, "physical": 4, "entrepreneurial": 3, "structured": 9, "humanitarian": 5, "outdoors": 3, "leadership": 3 },
+    "description": "Apply scientific methods to analyse evidence in criminal investigations. Requires meticulous attention to detail and the ability to present findings clearly in court.",
+    "why": "You are precise, methodical, and motivated by the pursuit of truth — even when the evidence is incomplete."
+  },
+  {
+    "id": "investment_banker",
+    "title": "Investment Banker",
+    "category": "Business & Law",
+    "traits": { "analytical": 10, "creative": 4, "social": 7, "technical": 6, "physical": 1, "entrepreneurial": 9, "structured": 8, "humanitarian": 2, "outdoors": 1, "leadership": 7 },
+    "description": "Advise companies on mergers, acquisitions, and capital raising. High-pressure, high-reward work at the intersection of finance and corporate strategy.",
+    "why": "You thrive under pressure, think in financial models, and enjoy high-stakes deal-making."
+  },
+  {
+    "id": "actuary",
+    "title": "Actuary",
+    "category": "Business & Law",
+    "traits": { "analytical": 10, "creative": 3, "social": 4, "technical": 7, "physical": 1, "entrepreneurial": 4, "structured": 10, "humanitarian": 3, "outdoors": 1, "leadership": 3 },
+    "description": "Assess financial risk using mathematics and statistics, primarily in insurance and pensions. One of the most consistently well-paid and stable professions.",
+    "why": "You think in probabilities, take a long-term view, and are comfortable with abstract quantitative work."
+  },
+  {
+    "id": "supply_chain_manager",
+    "title": "Supply Chain Manager",
+    "category": "Business & Law",
+    "traits": { "analytical": 8, "creative": 4, "social": 7, "technical": 7, "physical": 3, "entrepreneurial": 6, "structured": 9, "humanitarian": 3, "outdoors": 4, "leadership": 7 },
+    "description": "Oversee the end-to-end flow of goods from supplier to customer. Involves procurement, logistics, risk management, and working with global partners.",
+    "why": "You think systematically, enjoy optimising complex processes, and can manage multiple moving parts at once."
+  },
+  {
+    "id": "hr_manager",
+    "title": "HR Manager",
+    "category": "Business & Law",
+    "traits": { "analytical": 6, "creative": 5, "social": 10, "technical": 3, "physical": 1, "entrepreneurial": 5, "structured": 7, "humanitarian": 8, "outdoors": 1, "leadership": 7 },
+    "description": "Manage hiring, employee relations, performance, and workplace culture. A people-first role that keeps organisations functioning effectively.",
+    "why": "You genuinely care about people, are skilled at difficult conversations, and want to build better workplaces."
+  },
+  {
+    "id": "brand_strategist",
+    "title": "Brand Strategist",
+    "category": "Business & Law",
+    "traits": { "analytical": 7, "creative": 9, "social": 7, "technical": 4, "physical": 1, "entrepreneurial": 8, "structured": 5, "humanitarian": 3, "outdoors": 1, "leadership": 6 },
+    "description": "Define how companies present themselves — their voice, positioning, and visual identity. Works across research, messaging, and creative direction.",
+    "why": "You understand people deeply, think at a strategic level, and have an instinct for what resonates."
+  },
+  {
+    "id": "real_estate_agent",
+    "title": "Real Estate Agent",
+    "category": "Business & Law",
+    "traits": { "analytical": 6, "creative": 5, "social": 9, "technical": 4, "physical": 4, "entrepreneurial": 8, "structured": 5, "humanitarian": 4, "outdoors": 4, "leadership": 6 },
+    "description": "Help buyers and sellers navigate property transactions, combining local market knowledge with sales and negotiation skills.",
+    "why": "You are sociable, motivated by results, and enjoy the variety and independence that comes with commission-based work."
+  },
+  {
+    "id": "accountant",
+    "title": "Accountant",
+    "category": "Business & Law",
+    "traits": { "analytical": 9, "creative": 2, "social": 5, "technical": 5, "physical": 1, "entrepreneurial": 4, "structured": 10, "humanitarian": 3, "outdoors": 1, "leadership": 3 },
+    "description": "Manage financial records, tax compliance, and reporting for individuals or organisations. An essential function across every sector.",
+    "why": "You are precise, organised, and find satisfaction in clean systems where the numbers always balance."
+  },
+  {
+    "id": "economist",
+    "title": "Economist",
+    "category": "Business & Law",
+    "traits": { "analytical": 10, "creative": 5, "social": 5, "technical": 6, "physical": 1, "entrepreneurial": 5, "structured": 7, "humanitarian": 6, "outdoors": 1, "leadership": 4 },
+    "description": "Analyse how economies work and advise on policy, markets, and allocation of resources. Works in government, academia, think tanks, or finance.",
+    "why": "You think in systems, enjoy modelling complex dynamics, and want to understand what shapes society at scale."
+  },
+  {
+    "id": "patent_attorney",
+    "title": "Patent Attorney",
+    "category": "Business & Law",
+    "traits": { "analytical": 9, "creative": 5, "social": 6, "technical": 8, "physical": 1, "entrepreneurial": 5, "structured": 8, "humanitarian": 3, "outdoors": 1, "leadership": 5 },
+    "description": "Help inventors and companies protect their innovations through the patent system. Combines deep technical knowledge with legal expertise.",
+    "why": "You are precise, technically literate, and enjoy the challenge of translating inventions into airtight legal language."
+  },
+  {
+    "id": "game_designer",
+    "title": "Game Designer",
+    "category": "Creative & Media",
+    "traits": { "analytical": 7, "creative": 10, "social": 5, "technical": 8, "physical": 1, "entrepreneurial": 6, "structured": 6, "humanitarian": 3, "outdoors": 1, "leadership": 4 },
+    "description": "Design the rules, mechanics, and worlds of video games. Involves systems thinking, narrative, and deep understanding of player psychology.",
+    "why": "You think in systems and stories, enjoy making experiences for others, and are obsessive about what makes things fun."
+  },
+  {
+    "id": "photographer",
+    "title": "Photographer",
+    "category": "Creative & Media",
+    "traits": { "analytical": 4, "creative": 10, "social": 6, "technical": 6, "physical": 5, "entrepreneurial": 7, "structured": 4, "humanitarian": 4, "outdoors": 7, "leadership": 3 },
+    "description": "Capture images that tell stories, document moments, or create aesthetic impact. Work spans commercial, editorial, portrait, and fine art photography.",
+    "why": "You see the world visually, are patient in pursuit of the right moment, and can operate independently."
+  },
+  {
+    "id": "music_producer",
+    "title": "Music Producer",
+    "category": "Creative & Media",
+    "traits": { "analytical": 5, "creative": 10, "social": 6, "technical": 7, "physical": 3, "entrepreneurial": 7, "structured": 5, "humanitarian": 4, "outdoors": 2, "leadership": 5 },
+    "description": "Shape the sound of recorded music — working with artists, arranging, mixing, and guiding recordings from concept to release.",
+    "why": "You have a strong sonic imagination, are technically adept in the studio, and can bring out the best in others' performances."
+  },
+  {
+    "id": "art_director",
+    "title": "Art Director",
+    "category": "Creative & Media",
+    "traits": { "analytical": 5, "creative": 10, "social": 7, "technical": 5, "physical": 2, "entrepreneurial": 6, "structured": 6, "humanitarian": 3, "outdoors": 2, "leadership": 7 },
+    "description": "Lead the visual direction of campaigns, publications, or products — managing creative teams and shaping aesthetic decisions.",
+    "why": "You have strong creative vision, can communicate it clearly, and enjoy leading a team toward a unified look and feel."
+  },
+  {
+    "id": "fashion_designer",
+    "title": "Fashion Designer",
+    "category": "Creative & Media",
+    "traits": { "analytical": 4, "creative": 10, "social": 6, "technical": 5, "physical": 4, "entrepreneurial": 8, "structured": 5, "humanitarian": 3, "outdoors": 2, "leadership": 5 },
+    "description": "Create clothing, accessories, and collections that express ideas, culture, and identity. A highly competitive creative field blending art and commerce.",
+    "why": "You have a strong aesthetic sensibility, understand trends and materials, and want to make something people wear."
+  },
+  {
+    "id": "animator",
+    "title": "Animator",
+    "category": "Creative & Media",
+    "traits": { "analytical": 6, "creative": 10, "social": 4, "technical": 8, "physical": 2, "entrepreneurial": 5, "structured": 6, "humanitarian": 3, "outdoors": 1, "leadership": 3 },
+    "description": "Bring characters and worlds to life through movement — working in film, games, advertising, or independent production.",
+    "why": "You are patient, technically skilled, and have the creative vision and craft to make still images move with purpose."
+  },
+  {
+    "id": "podcast_host",
+    "title": "Podcast Host",
+    "category": "Creative & Media",
+    "traits": { "analytical": 5, "creative": 8, "social": 9, "technical": 4, "physical": 2, "entrepreneurial": 8, "structured": 4, "humanitarian": 6, "outdoors": 2, "leadership": 7 },
+    "description": "Research, produce, and host audio content — building an audience through conversation, storytelling, and ideas. Often self-directed and entrepreneurial.",
+    "why": "You are naturally curious, enjoy conversation, and have the drive to build something of your own in public."
+  },
+  {
+    "id": "copywriter",
+    "title": "Copywriter",
+    "category": "Creative & Media",
+    "traits": { "analytical": 5, "creative": 9, "social": 5, "technical": 3, "physical": 1, "entrepreneurial": 6, "structured": 5, "humanitarian": 4, "outdoors": 1, "leadership": 3 },
+    "description": "Write persuasive text for advertising, marketing, websites, and brand communication. Good copywriting is invisible — it just works.",
+    "why": "You understand how people think, choose words precisely, and enjoy the challenge of being persuasive within constraints."
+  },
+  {
+    "id": "university_professor",
+    "title": "University Professor",
+    "category": "Social & Education",
+    "traits": { "analytical": 9, "creative": 6, "social": 7, "technical": 5, "physical": 1, "entrepreneurial": 4, "structured": 7, "humanitarian": 8, "outdoors": 1, "leadership": 7 },
+    "description": "Teach at degree level and conduct research in your specialist field. A long path requiring a doctorate, but offers intellectual freedom and high autonomy.",
+    "why": "You love your subject, enjoy teaching what you know, and want to spend your career expanding the frontier of your field."
+  },
+  {
+    "id": "policy_analyst",
+    "title": "Policy Analyst",
+    "category": "Social & Education",
+    "traits": { "analytical": 9, "creative": 5, "social": 6, "technical": 5, "physical": 1, "entrepreneurial": 4, "structured": 8, "humanitarian": 8, "outdoors": 1, "leadership": 5 },
+    "description": "Research and evaluate public policy options for governments, think tanks, or NGOs. Involves data analysis, stakeholder engagement, and clear written communication.",
+    "why": "You want to improve society, think rigorously about evidence, and can translate complex issues into actionable recommendations."
+  },
+  {
+    "id": "diplomat",
+    "title": "Diplomat",
+    "category": "Social & Education",
+    "traits": { "analytical": 7, "creative": 5, "social": 10, "technical": 3, "physical": 3, "entrepreneurial": 5, "structured": 6, "humanitarian": 9, "outdoors": 5, "leadership": 8 },
+    "description": "Represent your country abroad, negotiate treaties, and protect citizens' interests in a foreign context. Requires cultural intelligence, language skills, and composure.",
+    "why": "You are deeply curious about the world, can build trust across cultures, and are comfortable navigating ambiguity."
+  },
+  {
+    "id": "urban_planner",
+    "title": "Urban Planner",
+    "category": "Social & Education",
+    "traits": { "analytical": 8, "creative": 7, "social": 6, "technical": 7, "physical": 3, "entrepreneurial": 5, "structured": 8, "humanitarian": 7, "outdoors": 5, "leadership": 5 },
+    "description": "Shape how cities and towns develop — balancing housing, transport, environment, and community need. Work spans policy, design, and public consultation.",
+    "why": "You care about how people live in cities and enjoy working at the intersection of design, data, and public good."
+  },
+  {
+    "id": "speech_therapist",
+    "title": "Speech Therapist",
+    "category": "Social & Education",
+    "traits": { "analytical": 7, "creative": 5, "social": 9, "technical": 5, "physical": 4, "entrepreneurial": 3, "structured": 7, "humanitarian": 10, "outdoors": 2, "leadership": 4 },
+    "description": "Assess and treat communication disorders in children and adults — from stuttering and language delays to voice disorders and swallowing difficulties.",
+    "why": "You are patient, empathetic, and deeply motivated by giving people the ability to communicate and connect."
+  },
+  {
+    "id": "occupational_therapist",
+    "title": "Occupational Therapist",
+    "category": "Social & Education",
+    "traits": { "analytical": 7, "creative": 6, "social": 8, "technical": 5, "physical": 7, "entrepreneurial": 3, "structured": 7, "humanitarian": 10, "outdoors": 3, "leadership": 4 },
+    "description": "Help people with physical, mental, or developmental conditions participate in everyday activities. A holistic, people-centred health profession.",
+    "why": "You see people's whole lives, not just their condition, and find meaning in enabling independence and dignity."
+  },
+  {
+    "id": "development_economist",
+    "title": "Development Economist",
+    "category": "Social & Education",
+    "traits": { "analytical": 9, "creative": 5, "social": 6, "technical": 5, "physical": 2, "entrepreneurial": 4, "structured": 7, "humanitarian": 10, "outdoors": 3, "leadership": 5 },
+    "description": "Study and work to improve economic conditions in lower-income countries and communities. Combines research, fieldwork, and policy influence.",
+    "why": "You want economics to serve people, not just markets, and are willing to work in challenging environments to make change."
+  },
+  {
+    "id": "public_health_officer",
+    "title": "Public Health Officer",
+    "category": "Social & Education",
+    "traits": { "analytical": 8, "creative": 5, "social": 7, "technical": 5, "physical": 4, "entrepreneurial": 4, "structured": 7, "humanitarian": 10, "outdoors": 4, "leadership": 6 },
+    "description": "Protect and improve the health of whole communities through disease prevention, health education, and policy. Works across government, NGOs, and international organisations.",
+    "why": "You see health as a right, not a privilege, and want to address the structural causes of illness at population level."
+  },
+  {
+    "id": "museum_curator",
+    "title": "Museum Curator",
+    "category": "Social & Education",
+    "traits": { "analytical": 8, "creative": 8, "social": 6, "technical": 4, "physical": 3, "entrepreneurial": 4, "structured": 8, "humanitarian": 6, "outdoors": 3, "leadership": 5 },
+    "description": "Manage, interpret, and exhibit collections in museums and galleries. Involves acquisition, conservation, research, and making culture accessible to the public.",
+    "why": "You love objects and stories in equal measure, are rigorous in your research, and want to preserve what matters."
+  },
+  {
+    "id": "pilot",
+    "title": "Pilot",
+    "category": "Skilled Trades & Outdoors",
+    "traits": { "analytical": 8, "creative": 3, "social": 6, "technical": 9, "physical": 6, "entrepreneurial": 4, "structured": 9, "humanitarian": 4, "outdoors": 8, "leadership": 7 },
+    "description": "Fly commercial or private aircraft, managing safety, navigation, and crew. Requires exceptional situational awareness and composure under pressure.",
+    "why": "You are calm, technically precise, and thrive in an environment where discipline and concentration directly protect lives."
+  },
+  {
+    "id": "marine_biologist",
+    "title": "Marine Biologist",
+    "category": "Skilled Trades & Outdoors",
+    "traits": { "analytical": 9, "creative": 5, "social": 5, "technical": 7, "physical": 7, "entrepreneurial": 3, "structured": 7, "humanitarian": 7, "outdoors": 10, "leadership": 3 },
+    "description": "Study marine organisms and ecosystems — diving, collecting samples, and conducting experiments to understand ocean life. Often involves field expeditions.",
+    "why": "You are fascinated by the ocean, comfortable with physical fieldwork, and motivated by conservation and discovery."
+  },
+  {
+    "id": "geologist",
+    "title": "Geologist",
+    "category": "Skilled Trades & Outdoors",
+    "traits": { "analytical": 9, "creative": 5, "social": 4, "technical": 8, "physical": 7, "entrepreneurial": 3, "structured": 7, "humanitarian": 5, "outdoors": 9, "leadership": 3 },
+    "description": "Study the Earth's structure, composition, and history through field surveys and laboratory analysis. Applications span mining, energy, hazard assessment, and climate.",
+    "why": "You want to read the story written in rock and soil, and are drawn to work that takes you to remote landscapes."
+  },
+  {
+    "id": "agricultural_scientist",
+    "title": "Agricultural Scientist",
+    "category": "Skilled Trades & Outdoors",
+    "traits": { "analytical": 8, "creative": 5, "social": 5, "technical": 7, "physical": 8, "entrepreneurial": 5, "structured": 7, "humanitarian": 7, "outdoors": 9, "leadership": 4 },
+    "description": "Research and develop methods to improve crop yields, soil health, and food security. Combines laboratory science with extensive field work.",
+    "why": "You care about feeding the world sustainably, enjoy outdoor practical work, and are comfortable with long research cycles."
+  },
+  {
+    "id": "mechanical_engineer",
+    "title": "Mechanical Engineer",
+    "category": "Skilled Trades & Outdoors",
+    "traits": { "analytical": 9, "creative": 6, "social": 4, "technical": 10, "physical": 5, "entrepreneurial": 4, "structured": 9, "humanitarian": 3, "outdoors": 3, "leadership": 4 },
+    "description": "Design and build mechanical systems — engines, machines, tools, and industrial equipment. One of the broadest engineering disciplines.",
+    "why": "You enjoy the challenge of making physical systems work reliably and have an intuition for how things move and transfer force."
+  },
+  {
+    "id": "quantity_surveyor",
+    "title": "Quantity Surveyor",
+    "category": "Skilled Trades & Outdoors",
+    "traits": { "analytical": 8, "creative": 3, "social": 5, "technical": 8, "physical": 4, "entrepreneurial": 5, "structured": 10, "humanitarian": 3, "outdoors": 4, "leadership": 4 },
+    "description": "Manage the costs and contracts of construction projects — from feasibility to completion. Ensures projects are delivered on budget and within specification.",
+    "why": "You are methodical, commercially aware, and find satisfaction in keeping complex projects financially on track."
+  },
+  {
+    "id": "logistics_manager",
+    "title": "Logistics Manager",
+    "category": "Skilled Trades & Outdoors",
+    "traits": { "analytical": 8, "creative": 4, "social": 7, "technical": 6, "physical": 4, "entrepreneurial": 6, "structured": 9, "humanitarian": 3, "outdoors": 4, "leadership": 7 },
+    "description": "Coordinate the movement of goods and people across supply chains — managing warehouses, transport, and delivery systems at scale.",
+    "why": "You are a natural organiser, can coordinate many variables at once, and find purpose in systems that run smoothly."
+  },
+  {
+    "id": "event_planner",
+    "title": "Event Planner",
+    "category": "Skilled Trades & Outdoors",
+    "traits": { "analytical": 6, "creative": 8, "social": 9, "technical": 4, "physical": 5, "entrepreneurial": 7, "structured": 7, "humanitarian": 5, "outdoors": 4, "leadership": 7 },
+    "description": "Design and execute events — conferences, weddings, product launches — managing every logistical and creative detail.",
+    "why": "You enjoy making memorable experiences for others, can manage many moving parts calmly, and thrive on the day of the event."
+  },
+  {
+    "id": "personal_trainer",
+    "title": "Personal Trainer",
+    "category": "Skilled Trades & Outdoors",
+    "traits": { "analytical": 5, "creative": 5, "social": 8, "technical": 4, "physical": 10, "entrepreneurial": 7, "structured": 6, "humanitarian": 7, "outdoors": 7, "leadership": 6 },
+    "description": "Design fitness programmes and coach clients toward their health and performance goals. Rewarding work combining physical activity with human connection.",
+    "why": "You are passionate about fitness, enjoy motivating others, and want work that keeps you active and connected to people."
+  },
+  {
+    "id": "librarian",
+    "title": "Librarian",
+    "category": "Social & Education",
+    "traits": { "analytical": 7, "creative": 5, "social": 7, "technical": 4, "physical": 2, "entrepreneurial": 2, "structured": 9, "humanitarian": 7, "outdoors": 1, "leadership": 4 },
+    "description": "Manage information resources, support research, and connect communities with knowledge. Modern librarians are as much information architects as book custodians.",
+    "why": "You love organising knowledge, believe in public access to information, and enjoy helping people find what they need."
+  }
+]

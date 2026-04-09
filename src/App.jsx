@@ -1,33 +1,40 @@
 import { useState, useEffect } from 'react';
+import { supabase } from './lib/supabase';
+import { buildProfile, rankProfessions } from './utils/score';
+import fallbackProfessions from './data/professions.json';
+import questions from './data/questions.json';
+import Landing from './components/Landing';
 import ProgressBar from './components/ProgressBar';
 import Question from './components/Question';
-import Results from './components/Results';
-import { buildProfile, rankProfessions } from './utils/score';
-
-const BASE = import.meta.env.BASE_URL;
-
-async function loadJSON(path) {
-  const res = await fetch(`${BASE}${path}`);
-  return res.json();
-}
+import Result from './components/Result';
+import SubmissionFlow from './components/SubmissionFlow';
 
 export default function App() {
-  const [screen, setScreen] = useState('loading'); // loading | intro | quiz | results
-  const [questions, setQuestions] = useState([]);
+  // screen: landing | quiz | results | submission
+  const [screen, setScreen] = useState('loading');
   const [professions, setProfessions] = useState([]);
   const [currentQ, setCurrentQ] = useState(0);
-  const [answers, setAnswers] = useState([]);
+  const [answers, setAnswers] = useState([]);   // flat delta objects
   const [topResults, setTopResults] = useState([]);
+  const [userProfile, setUserProfile] = useState(null);
   const [transitioning, setTransitioning] = useState(false);
 
   useEffect(() => {
-    Promise.all([loadJSON('data/questions.json'), loadJSON('data/professions.json')])
-      .then(([q, p]) => {
-        setQuestions(q);
-        setProfessions(p);
-        setScreen('intro');
-      })
-      .catch(() => setScreen('error'));
+    async function loadProfessions() {
+      const { data, error } = await supabase
+        .from('professions')
+        .select('*')
+        .eq('status', 'active');
+
+      if (!error && data && data.length > 0) {
+        // Supabase rows have `name` not `title` — normalise
+        setProfessions(data.map(p => ({ ...p, title: p.name })));
+      } else {
+        setProfessions(fallbackProfessions);
+      }
+      setScreen('landing');
+    }
+    loadProfessions();
   }, []);
 
   function handleAnswer(answer) {
@@ -39,10 +46,11 @@ export default function App() {
       setTimeout(() => {
         setCurrentQ(q => q + 1);
         setTransitioning(false);
-      }, 100);
+      }, 80);
     } else {
       const profile = buildProfile(newAnswers);
       const ranked = rankProfessions(profile, professions);
+      setUserProfile(profile);
       setTopResults(ranked.slice(0, 3));
       setScreen('results');
     }
@@ -52,72 +60,67 @@ export default function App() {
     setAnswers([]);
     setCurrentQ(0);
     setTopResults([]);
-    setScreen('intro');
+    setUserProfile(null);
+    setScreen('landing');
+  }
+
+  function handleNoneOfThese(profile) {
+    setUserProfile(profile);
+    setScreen('submission');
   }
 
   return (
-    <div className="flex flex-col min-h-svh px-4 py-10 sm:py-16">
+    <div
+      className="flex flex-col min-h-svh"
+      style={{ background: '#FAFAFA' }}
+    >
+      {/* Progress bar — full width at top during quiz */}
+      {screen === 'quiz' && !transitioning && (
+        <ProgressBar current={currentQ + 1} total={questions.length} />
+      )}
+
       <div className="flex-1 flex flex-col items-center justify-center">
 
         {screen === 'loading' && (
-          <div className="text-slate-400 animate-pulse text-lg">Loading…</div>
+          <p className="text-sm" style={{ color: '#AAAAAA' }}>Loading…</p>
         )}
 
-        {screen === 'error' && (
-          <div className="text-red-400">Failed to load data. Check the console.</div>
+        {screen === 'landing' && (
+          <Landing onStart={() => setScreen('quiz')} />
         )}
 
-        {screen === 'intro' && (
-          <div className="animate-fade-slide-in text-center max-w-xl mx-auto">
-            <div className="text-7xl mb-6 animate-pop-in">🔮</div>
-            <h1
-              className="text-4xl sm:text-5xl font-black mb-4 leading-tight"
-              style={{
-                background: 'linear-gradient(135deg, #818cf8, #a855f7, #ec4899)',
-                WebkitBackgroundClip: 'text',
-                WebkitTextFillColor: 'transparent',
-                backgroundClip: 'text',
-              }}
-            >
-              Job Akinator
-            </h1>
-            <p className="text-slate-400 text-base sm:text-lg leading-relaxed mb-8">
-              Answer 12 quick questions and discover which of 20 careers suits
-              you best. No sign-up. No fluff.
-            </p>
-            <button
-              onClick={() => setScreen('quiz')}
-              className="px-10 py-4 rounded-2xl text-white font-bold text-lg
-                transition-all duration-200 hover:scale-105 active:scale-95 cursor-pointer
-                shadow-lg shadow-purple-900/40"
-              style={{ background: 'linear-gradient(135deg, #6366f1, #a855f7, #ec4899)' }}
-            >
-              Start →
-            </button>
-            <p className="text-slate-600 text-xs mt-4">Takes about 2 minutes</p>
-          </div>
-        )}
-
-        {screen === 'quiz' && !transitioning && questions.length > 0 && (
-          <div className="w-full max-w-2xl mx-auto">
-            <ProgressBar current={currentQ + 1} total={questions.length} />
-            <Question
-              key={currentQ}
-              question={questions[currentQ]}
-              questionNumber={currentQ + 1}
-              total={questions.length}
-              onAnswer={handleAnswer}
-            />
-          </div>
+        {screen === 'quiz' && !transitioning && (
+          <Question
+            key={currentQ}
+            question={questions[currentQ]}
+            questionNumber={currentQ + 1}
+            total={questions.length}
+            onAnswer={handleAnswer}
+          />
         )}
 
         {screen === 'results' && (
-          <Results topProfessions={topResults} onRestart={restart} />
+          <Result
+            topProfessions={topResults}
+            onRestart={restart}
+            onNoneOfThese={handleNoneOfThese}
+            userProfile={userProfile}
+          />
+        )}
+
+        {screen === 'submission' && (
+          <SubmissionFlow
+            userProfile={userProfile}
+            onBack={() => setScreen('results')}
+          />
         )}
 
       </div>
 
-      <footer className="text-center text-slate-700 text-xs mt-12">
+      <footer
+        className="text-center text-xs py-6"
+        style={{ color: '#DDDDDD' }}
+      >
         Job Akinator · {new Date().getFullYear()}
       </footer>
     </div>
