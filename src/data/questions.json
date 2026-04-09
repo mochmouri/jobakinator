@@ -61,16 +61,6 @@
   },
   {
     "id": 7,
-    "text": "You're given a blank canvas and told to create something. How do you feel?",
-    "answers": [
-      { "text": "Excited — I thrive without constraints", "deltas": { "creative": 3, "entrepreneurial": 1 } },
-      { "text": "A bit anxious — I prefer clear guidelines", "deltas": { "analytical": 2, "technical": 1, "structured": 2 } },
-      { "text": "Happy, as long as I can collaborate with others", "deltas": { "social": 2, "creative": 1, "leadership": 1 } },
-      { "text": "Focused — I'd research first and plan carefully", "deltas": { "analytical": 2, "structured": 2 } }
-    ]
-  },
-  {
-    "id": 8,
     "text": "How do you feel about risk and uncertainty?",
     "answers": [
       { "text": "I actively seek it out — it's where opportunity lives", "deltas": { "entrepreneurial": 3, "leadership": 1 } },
@@ -80,7 +70,7 @@
     ]
   },
   {
-    "id": 9,
+    "id": 8,
     "text": "What kind of results do you find most satisfying?",
     "answers": [
       { "text": "Seeing someone improve or succeed because of you", "deltas": { "social": 2, "humanitarian": 3 } },
@@ -90,7 +80,7 @@
     ]
   },
   {
-    "id": 10,
+    "id": 9,
     "text": "How important is earning a high salary to you?",
     "answers": [
       { "text": "Very — it's a primary motivator", "deltas": { "analytical": 1, "entrepreneurial": 2 } },
@@ -100,7 +90,7 @@
     ]
   },
   {
-    "id": 11,
+    "id": 10,
     "text": "How do you prefer to communicate at work?",
     "answers": [
       { "text": "Face-to-face conversations and presentations", "deltas": { "social": 3, "leadership": 1 } },
@@ -110,7 +100,7 @@
     ]
   },
   {
-    "id": 12,
+    "id": 11,
     "text": "Where do you see yourself working?",
     "answers": [
       { "text": "A busy clinic, school, or public setting", "deltas": { "social": 2, "humanitarian": 2 } },
@@ -120,7 +110,7 @@
     ]
   },
   {
-    "id": 13,
+    "id": 12,
     "text": "How do you feel about following rules and set procedures?",
     "answers": [
       { "text": "I appreciate them — clear processes reduce mistakes", "deltas": { "structured": 3, "analytical": 1 } },
@@ -130,27 +120,7 @@
     ]
   },
   {
-    "id": 14,
-    "text": "How motivated are you by helping people who are vulnerable or disadvantaged?",
-    "answers": [
-      { "text": "Very — it's one of my core reasons to work", "deltas": { "humanitarian": 4, "social": 1 } },
-      { "text": "It matters, but isn't my main driver", "deltas": { "humanitarian": 2 } },
-      { "text": "I care but am more motivated by intellectual challenge", "deltas": { "analytical": 2, "humanitarian": 1 } },
-      { "text": "I'd rather focus on building things or solving problems", "deltas": { "technical": 2, "entrepreneurial": 1 } }
-    ]
-  },
-  {
-    "id": 15,
-    "text": "How do you feel about spending time in nature or working outdoors?",
-    "answers": [
-      { "text": "It's essential — I'd struggle in an office all day", "deltas": { "outdoors": 4, "physical": 1 } },
-      { "text": "I enjoy it but it's not a dealbreaker", "deltas": { "outdoors": 2 } },
-      { "text": "I like occasional trips outside but prefer indoors", "deltas": { "outdoors": 1 } },
-      { "text": "I prefer being indoors, focused at a desk", "deltas": { "analytical": 1, "structured": 1, "technical": 1 } }
-    ]
-  },
-  {
-    "id": 16,
+    "id": 13,
     "text": "How comfortable are you taking charge and directing others?",
     "answers": [
       { "text": "Very — I naturally step up in group situations", "deltas": { "leadership": 4, "entrepreneurial": 1 } },

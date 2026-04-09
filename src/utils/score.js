@@ -29,29 +29,37 @@ export const TRAIT_DESCRIPTIONS = {
   leadership: 'You enjoy taking charge, making decisions, and guiding others',
 };
 
-export function buildProfile(answers, questions) {
-  const profile = Object.fromEntries(TRAITS.map(t => [t, 0]));
-
-  // If called with flat delta objects (legacy), use directly
-  if (!questions) {
-    for (const answer of answers) {
-      for (const [trait, delta] of Object.entries(answer.deltas)) {
-        profile[trait] = (profile[trait] || 0) + delta;
-      }
-    }
-    return profile;
-  }
-
-  // answers is array of { questionId, answerIndex }
-  for (const { questionId, answerIndex } of answers) {
-    const q = questions.find(q => q.id === questionId);
-    if (!q) continue;
-    const answer = q.answers[answerIndex];
-    if (!answer) continue;
+// interestAnswers: array of answer objects with .deltas (from interest MC questions)
+// seAnswers: array of answer objects with .deltas (expanded from SE questions — one trait each, score 0/1/2)
+export function buildProfile(interestAnswers, seAnswers) {
+  // Accumulate raw interest scores
+  const interest = Object.fromEntries(TRAITS.map(t => [t, 0]));
+  for (const answer of interestAnswers) {
     for (const [trait, delta] of Object.entries(answer.deltas)) {
-      profile[trait] = (profile[trait] || 0) + delta;
+      interest[trait] += delta;
     }
   }
+
+  // Accumulate raw SE scores (max 2 per trait — one question, score 0/1/2)
+  const se = Object.fromEntries(TRAITS.map(t => [t, 0]));
+  for (const answer of seAnswers) {
+    for (const [trait, delta] of Object.entries(answer.deltas)) {
+      se[trait] += delta;
+    }
+  }
+
+  // Normalise interest by the observed max across all traits (floors at 1 to avoid ÷0)
+  const interestMax = Math.max(...Object.values(interest), 1);
+
+  // SE max is fixed at 2
+  const seMax = 2;
+
+  // Weighted combination: interest 65%, self-efficacy 35%
+  const profile = Object.fromEntries(TRAITS.map(t => [t, 0]));
+  for (const t of TRAITS) {
+    profile[t] = (interest[t] / interestMax) * 0.65 + (se[t] / seMax) * 0.35;
+  }
+
   return profile;
 }
 

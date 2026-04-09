@@ -1,0 +1,12 @@
+[
+  { "id": 101, "text": "How confident are you in your ability to analyse complex problems and find logical solutions?", "trait": "analytical" },
+  { "id": 102, "text": "How confident are you in your ability to come up with original ideas and creative approaches?", "trait": "creative" },
+  { "id": 103, "text": "How confident are you in your ability to connect with people and build strong working relationships?", "trait": "social" },
+  { "id": 104, "text": "How confident are you working with technology, tools, or technical systems?", "trait": "technical" },
+  { "id": 105, "text": "How confident are you in roles that require physical stamina or hands-on work?", "trait": "physical" },
+  { "id": 106, "text": "How confident are you in your ability to spot opportunities and take initiative on new ideas?", "trait": "entrepreneurial" },
+  { "id": 107, "text": "How confident are you in your ability to stay organised and follow processes under pressure?", "trait": "structured" },
+  { "id": 108, "text": "How confident are you in your ability to support and advocate for people who need help?", "trait": "humanitarian" },
+  { "id": 109, "text": "How well do you think you'd cope with a career spent mostly outdoors or in varied locations?", "trait": "outdoors" },
+  { "id": 110, "text": "How confident are you in your ability to lead a team and make important decisions?", "trait": "leadership" }
+]
